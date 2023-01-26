@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>COP 4331 LAMP Stack Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+</head>
+<body>
+
+		<h1 id="title">Glorious Paradise</h1>
+
+	<div id="loginDiv">
+		<button type="button" id="loginButton" class="buttons" onclick="sendtoLogin();"> Login </button>
+
+		<button type="button" id="loginButton" class="buttons" onclick="sendtoSignup();"> Sign up </button>
+
+		<script>
+			function sendtoSignup() {
+			location.replace("signup.html")
+			}
+		</script>
+		
+		<script>
+			function sendtoLogin() {
+			location.replace("login.html")
+			}
+		</script>
+	</div>
+
+</body>
+</html>
