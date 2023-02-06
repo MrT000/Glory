@@ -17,16 +17,34 @@ body
     text-shadow: 4px 4px 4px #f7bb63;
     transform: translate(125px, 40px);
 }
+div {
+    min-width: 400px;
+    min-height: 400px;
+
+    position: absolute;
+    top:20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.container {
+	position: absolute;
+    width: 800px;
+    height: auto;
+}
 
 #loginDiv
 {
     font-size: 30px;
     width: 20%;
-    height: 33%;
+    height: 40%;
     margin-left: 45%;
     margin-top: 5%;
     padding: 25px;
-    background-color: #5A4860;
+    background: linear-gradient(to bottom left, #4a4d7a,#5db6c0);
     border-radius: 25px;
     position: sticky;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -86,11 +104,6 @@ input[type="text"],input[type="password"]{
     font-family: 'Courgette', sans-serif;
 }
 
-input[type="edit"]{
-    border-radius: 25px;
-    font-family: 'Courgette', sans-serif;
-}
-
 #inner-title{
     display: inline-block;
     font-size: 0.8em;
@@ -130,16 +143,9 @@ input {
   margin-bottom: 16px;
 }
 
-.container {
-  background: -webkit-linear-gradient(right,#003366,#004080,#0059b3
-, #0073e6);
-  padding: 20px;
-  width: 1500px;
-}
-
 #message {
-  display: center;
-  background: #ffffff;
+  display:none;
+  background: #f1f1f1;
   color: #000;
   position: relative;
   padding: 20px;
@@ -160,7 +166,6 @@ input {
   left: -35px;
   content: "?";
 }
-
 .invalid {
   color: red;
 }
@@ -169,57 +174,4 @@ input {
   position: relative;
   left: -35px;
   content: "?";
-}
-
-.table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  width: 800px;
-  font-size: 0.9em;
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  border-radius: 15px;
-}
-
-.table thead {
-  background-color: #3badb7;
-  font-weight: bold;
-  height: 1px;
-}
-.tabel tbody td {
-  height: 105px;
-}
-.table tbody tr:nth-child(even) {
-  background-color: #f6f6f6;
-}
-.table tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-td {
-  height: 54px;
-}
-
-table, td {
-  border: 1px solid #0e0d0d;
-}
-
-.button
-{
-    display: center;
-    font-size: 40px;
-    border-radius: 25px;
-    width: 150px;
-    height: 50px;
-    font-family: 'Courgette', sans-serif;
-    background-color: #ffffff;
-    color: #5A4860;
-}
-
-.button:hover{
-    background-image: linear-gradient(#f08d54, #c26d6a);
-    color: #FFFFFF;
-    opacity: 0.78;
-    cursor: pointer;
 }

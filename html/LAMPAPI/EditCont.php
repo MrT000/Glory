@@ -1,18 +1,21 @@
 <?php
 $inData = getRequestInfo();
 
+$firstName = $inData["firstName"];
+$lastName = $inData["lastName"];
 $phone = $inData["phone"];
-$userId = $inData["userId"];
+$email = $inData["email"];
+$id = $inData["id"];
 
 $conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
-if ($conn->connect_error) 
+if ($conn->connect_error)
 {
 	returnWithError( $conn->connect_error );
-} 
+}
 else
 {
-	$stmt = $conn->prepare("DELETE from Contacts where Phone=? and UserID=?;");
-	$stmt->bind_param("ss", $phone, $userId);
+	$stmt = $conn->prepare("UPDATE Contacts SET FirstName=?, LastName=?, Phone=?, Email=? WHERE ID=?;");
+	$stmt->bind_param("sssss", $firstName, $lastName, $phone, $email, $id);
 	$stmt->execute();
 	echo "Contact Deleted\n";
 	$stmt->close();

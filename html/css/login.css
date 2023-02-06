@@ -18,18 +18,42 @@ body
     transform: translate(125px, 40px);
 }
 
-#loginDiv
+#headerbox
 {
     font-size: 30px;
-    width: 20%;
-    height: 33%;
-    margin-left: 45%;
-    margin-top: 5%;
+    width: 30%;
+    height: 10%;
+    margin-left: 40%;
+    margin-top: 10%;
     padding: 25px;
     background-color: #5A4860;
     border-radius: 25px;
     position: sticky;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#loginDiv
+{
+    font-size: 30px;
+    width: 20%;
+    height: 25%;
+    margin-left: 45%;
+    margin-top: 5%;
+    padding: 25px;
+    padding-bottom: 0px;
+    background-color: #5A4860;
+    border-radius: 25px;
+    position: sticky;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#loggedInDiv
+{
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 25px;
+    background-color: #b2b2b2;
 }
 
 #accessUIDiv
@@ -46,11 +70,13 @@ body
     font-size: 40px;
     border-radius: 25px;
     width: 100%;
-    height: 15%;
+    height: 20%;
     margin-top: 2%;
+    margin-bottom: 0px;
     font-family: 'Courgette', sans-serif;
     background-color: #ffffff;
     color: #5A4860;
+
 }
 
 .buttons:hover{
@@ -86,11 +112,6 @@ input[type="text"],input[type="password"]{
     font-family: 'Courgette', sans-serif;
 }
 
-input[type="edit"]{
-    border-radius: 25px;
-    font-family: 'Courgette', sans-serif;
-}
-
 #inner-title{
     display: inline-block;
     font-size: 0.8em;
@@ -120,106 +141,15 @@ input[type="edit"]{
     text-align: center;
 }
 
-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+#logoutButton{
+    width: 20%;
+    margin-left: 40%;
 }
 
-.container {
-  background: -webkit-linear-gradient(right,#003366,#004080,#0059b3
-, #0073e6);
-  padding: 20px;
-  width: 1500px;
-}
-
-#message {
-  display: center;
-  background: #ffffff;
-  color: #000;
-  position: relative;
-  padding: 20px;
-  margin-top: 10px;
-}
-
-#message p {
-  padding: 10px 35px;
-  font-size: 18px;
-}
-
-.valid {
-  color: green;
-}
-
-.valid:before {
-  position: relative;
-  left: -35px;
-  content: "?";
-}
-
-.invalid {
-  color: red;
-}
-
-.invalid:before {
-  position: relative;
-  left: -35px;
-  content: "?";
-}
-
-.table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  width: 800px;
-  font-size: 0.9em;
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  border-radius: 15px;
-}
-
-.table thead {
-  background-color: #3badb7;
-  font-weight: bold;
-  height: 1px;
-}
-.tabel tbody td {
-  height: 105px;
-}
-.table tbody tr:nth-child(even) {
-  background-color: #f6f6f6;
-}
-.table tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-td {
-  height: 54px;
-}
-
-table, td {
-  border: 1px solid #0e0d0d;
-}
-
-.button
-{
-    display: center;
-    font-size: 40px;
-    border-radius: 25px;
-    width: 150px;
-    height: 50px;
+select{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+    font-size: 0.75em;
     font-family: 'Courgette', sans-serif;
-    background-color: #ffffff;
-    color: #5A4860;
-}
-
-.button:hover{
-    background-image: linear-gradient(#f08d54, #c26d6a);
-    color: #FFFFFF;
-    opacity: 0.78;
-    cursor: pointer;
 }

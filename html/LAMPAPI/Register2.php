@@ -1,7 +1,7 @@
 
 <?php
 $inData = getRequestInfo();
-
+	
 $id = 0;
 $login = "";
 $password = "";
@@ -22,7 +22,6 @@ if( $conn->connect_error )
 	if( $row = $result->fetch_assoc()  )
 	{
 		echo "This User Already Exists\nPlease try again at another time";
-		http_response_code(403);
 	}
 	else
 	{

@@ -79,7 +79,7 @@ body
     background-image: linear-gradient(#f08d54, #c26d6a);
     color: #FFFFFF;
     opacity: 0.78;
-    curser: pointer;
+    cursor: pointer;
 }
 
 #loginName
@@ -135,33 +135,4 @@ input[type="text"],input[type="password"]{
     width: 80%;
     margin-left: 10%;
     text-align: center;
-}
-
-#logoutButton{
-    width: 20%;
-    margin-left: 40%;
-}
-
-select{
-    width: 30%;
-    margin-left: 35%;
-    margin-top: 2%;
-    font-size: 0.75em;
-    font-family: 'Courgette', sans-serif;
-}
-
-#colorSearchResult{
-    display: none;
-}
-
-#colorAddResult{
-    display: inline-block;
-    font-size: 0.8em;
-    width: 90%;
-    text-align: center;
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    font-family: 'Courgette', sans-serif;
-    color: #95060a;
 }
