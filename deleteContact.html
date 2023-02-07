@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Delete Contact from Paradise</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+  <link href="css/deleteContact.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {readCookie();});
+	</script>
+
+
+</head>
+<body>
+
+	<h1 id="title">Glorious Paradise</h1>
+		<div id="loginDiv">
+			<input type="text" id="Phone" placeholder="Phone Number" /><br />
+			<button id="loginButton" class="buttons" onclick="confirmDelete()">Delete Contact</button>
+			<a href= "/paradise.html">
+				<button class="buttons" id="loginButton"> Return </button>
+			</a>
+		</div>
+
+	<script>
+	function confirmDelete() {
+	  let text = "Are you sure you want to delete?";
+	  if (confirm(text) == true) {
+	    doDeleteContact();
+	  } else {
+	  }
+	  document.getElementById("demo").innerHTML = text;
+	}
+	</script>
+</body>
+</html>

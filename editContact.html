@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Edit Contact for Paradise</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+    <link href="css/editContact1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+		<script type="text/javascript">
+		//document.addEventListener('DOMContentLoaded', function () {readCookie();});
+		</script>
+
+</head>
+<body>
+
+		<h1 id="title">Glorious Paradise</h1>
+
+	<div id="loginDiv">
+
+		<input type="text" id="SearchPhone" placeholder="Phone" /><br />
+		<button type="button" id="loginButton" class="buttons" onclick="searchSpecificContact();"> Pull Up Contact </button>
+		<span class="text" id="SearchResult"></span>
+		<input class="text" id="First" placeholder="First Name"> </input> <br />
+		<input class="text" id="Last" placeholder="Last Name"/><br />
+		<input class="text" id="Phone" placeholder="Phone Number" /><br />
+		<input class="text" id="Email" placeholder="Email" /><br />
+
+		<button type="button" id="loginButton" class="buttons" onclick="doEditContact();"> Edit Contact </button>
+		<a href= "/paradise.html">
+				<button class="buttons" id="loginButton"> Return </button>
+		</a>
+		<text class="text" style="display: none" id="ID" placeholder="ID"/><br />
+	</div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-const urlBase = 'http://paradise4331.online/LAMPAPI';
+const urlBase = 'https://paradise4331.online/LAMPAPI';
 const extension = 'php';
 
 let userId = 0;
@@ -190,25 +190,16 @@ function loadTable()
 			if (this.readyState == 4 && this.status == 200)
 			{
 
-
 				let jsonObject = JSON.parse( xhr.responseText );
-
-
-
 
 					for( let i=0; i<jsonObject.results.length; i++ )
 					{
               let num = i +1;
 							markup = "<tr><td> " + num + " </td> " + "<td>" + jsonObject.results[i].FirstName + " </td>" + "<td> " + jsonObject.results[i].LastName + " </td>" + "<td> " + jsonObject.results[i].Phone + " </td>" + "<td> " + jsonObject.results[i].Email + " </td> " + "</tr>";
-
 							tableBody = $("table tbody");
 							tableBody.append(markup);
-
 					}
-
-
 			}
-
 		};
 		xhr.send(jsonPayload);
 	}
@@ -263,13 +254,11 @@ function doDeleteContact()
 
 	let Phone = document.getElementById("Phone").value;
 
-
 	var tmp = {phone:Phone, userId:userId};
 
 	let jsonPayload = JSON.stringify( tmp );
 
 	let url = urlBase + '/DeleteContact.' + extension;
-
 
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
@@ -281,9 +270,7 @@ function doDeleteContact()
 			if (this.readyState == 4 && this.status == 200)
 			{
 				console.log("Contact deleted");
-
 				window.location.href = "paradise.html";
-
 			}
 		};
 		xhr.send(jsonPayload);
@@ -292,26 +279,6 @@ function doDeleteContact()
 	{
 		console.log(err.message);
 	}
-
-}
-
-
-
-function enterKey()
-{
-  var input = document.getElementById("myInput").value;
-
-	/*
-  input.addEventListener("keypress", function(event))
-  {
-    if(event.key == "Enter")
-    {
-      event.preventDefault();
-
-      document.getElementById("loginButton").click();
-    }
-  });
-	*/
 }
 
 function searchSpecificContact()
@@ -368,11 +335,11 @@ function searchSpecificContact()
 	{
 		document.getElementById("colorSearchResult").innerHTML = err.message;
 	}
-
 }
 
 function doEditContact()
 {
+	
 	let First = document.getElementById("First").value;
 	let Last = document.getElementById("Last").value;
 	let Phone = document.getElementById("Phone").value;

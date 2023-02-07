@@ -85,7 +85,6 @@ table, td {
 }
 
 
-
 .buttons
 {
     font-size: 30px;
@@ -95,13 +94,13 @@ table, td {
     margin-top: 2%;
     font-family: 'Courgette', sans-serif;
     background-color: #ffffff;
-    color: #5A4860;
+    color: #000000;
 
 }
 
 .buttons:hover{
-    background-image: linear-gradient(#f08d54, #c26d6a);
+    background-image: -webkit-linear-gradient(right,#003366,#004080,#0059b3
+    , #0073e6);
     color: #FFFFFF;
-    opacity: 0.5;
     cursor: pointer;
 }
