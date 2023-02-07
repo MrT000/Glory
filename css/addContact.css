@@ -1,0 +1,177 @@
+body
+{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#title
+{
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Courgette', sans-serif;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px #f7bb63;
+    transform: translate(125px, 40px);
+}
+div {
+    min-width: 400px;
+    min-height: 400px;
+
+    position: absolute;
+    top:20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.container {
+	position: absolute;
+    width: 800px;
+    height: auto;
+}
+
+#loginDiv
+{
+    font-size: 30px;
+    width: 20%;
+    height: 40%;
+    margin-left: 45%;
+    margin-top: 5%;
+    padding: 25px;
+    background: linear-gradient(to bottom left, #4a4d7a,#5db6c0);
+    border-radius: 25px;
+    position: sticky;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#accessUIDiv
+{
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 25px;
+    background-color: #b2b2b2;
+}
+
+.buttons
+{
+    font-size: 40px;
+    border-radius: 25px;
+    width: 100%;
+    height: 15%;
+    margin-top: 2%;
+    font-family: 'Courgette', sans-serif;
+    background-color: #ffffff;
+    color: #5A4860;
+}
+
+.buttons:hover{
+    background-image: linear-gradient(#f08d54, #c26d6a);
+    color: #FFFFFF;
+    opacity: 0.78;
+    cursor: pointer;
+}
+
+#loginName
+{
+	font-size: 30px;
+}
+#loginPassword
+{
+	font-size: 30px;
+}
+#searchText
+{
+	font-size: 30px;
+}
+#colorText
+{
+	font-size: 30px;
+}
+
+input[type="text"],input[type="password"]{
+    border-radius: 25px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    font-family: 'Courgette', sans-serif;
+}
+
+#inner-title{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: 'Courgette', sans-serif;
+    color: #ffffff;
+}
+
+#loginResult{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: 'Courgette', sans-serif;
+    color: #95060a;
+}
+
+#userName{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "?";
+}
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "?";
+}
